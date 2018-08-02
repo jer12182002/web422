@@ -1,0 +1,35 @@
+<div class="center">
+    <h2>Employees</h2>
+    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non odio sed eros tristique bibendum.</p>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="table-responsive">
+                <table class="table table-condensed table-hover">
+                    <thead>
+                        <th>Full Name</th>
+                        <th>Address</th>
+                        <th>Phone Number</th>
+                        <th>Hire Date</th>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor='let emp of employee'>
+                            <td>
+                                <b>{{emp.FirstName}} {{emp.LastName}}</b>
+                            </td>
+                            <td>
+                                {{emp.AddressStreet}}. {{emp.AddressState}}, {{emp.AddressCity}}, {{emp.AddressZip}}
+                            </td>
+                            <td>
+                                {{emp.PhoneNum}} ext: {{emp.Extension}}
+                            </td>
+                            <td>{{emp.HireDate | date:'longDate'}}</td>
+                        </tr>
+                         </tbody>
+                </table>
+            </div>
+            
+        </div>
+    </div>
+</div>

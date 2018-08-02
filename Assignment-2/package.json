@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "node-sass": "^4.5.3"
+  },
+  "scripts": {
+    "build-css": "node-sass scss/bootstrap-header-table.scss css/bootstrap-header-table.css --include-path scss -w"
+  }
+}
